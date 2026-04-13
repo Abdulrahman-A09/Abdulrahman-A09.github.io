@@ -870,7 +870,7 @@ function closePopupAd() {
 
 function schedulePopup() {
     if (popupTimeout) clearTimeout(popupTimeout);
-    const delay = Math.floor(Math.random() * 15000) + 15000;
+    const delay = Math.floor(Math.random() * 5000) + 35000;
     popupTimeout = setTimeout(() => {
         showPopupAd();
     }, delay);
